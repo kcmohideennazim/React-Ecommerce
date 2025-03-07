@@ -1,6 +1,6 @@
 import React from "react";
 import { useWishlist } from "../context/WishlistContext";
-import "../pages/Wishlist.css"; // Import styles
+import "../pages/Wishlist.css"; 
 
 function Wishlist() {
   const { wishlist, removeFromWishlist, moveToCart } = useWishlist();

@@ -5,7 +5,7 @@ const WishlistContext = createContext();
 
 export const WishlistProvider = ({ children }) => {
   const [wishlist, setWishlist] = useState([]);
-  const { addToCart } = useCart();  // Use cart context here
+  const { addToCart } = useCart();  
 
   const addToWishlist = (item) => {
     console.log("Adding to Wishlist:", item);
@@ -21,10 +21,10 @@ export const WishlistProvider = ({ children }) => {
     setWishlist((prevWishlist) => prevWishlist.filter((item) => item.id !== id));
   };
 
-  // ✅ Fix: Add `moveToCart` function
+  
   const moveToCart = (item) => {
-    addToCart(item);  // Add item to cart
-    removeFromWishlist(item.id); // Remove from wishlist
+    addToCart(item);  
+    removeFromWishlist(item.id);
   };
 
   return (

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 import { useWishlist } from "../context/WishlistContext";
-import "./Navbar.css"; // Separate CSS for cleaner styling
+import "./Navbar.css"; 
 
 const Navbar = () => {
   const { cart } = useCart();

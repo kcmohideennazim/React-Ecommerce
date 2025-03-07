@@ -1,4 +1,4 @@
-/* src/App.css */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -40,10 +40,10 @@ button:hover {
   background-color: #0056b3;
 }
 .car-card img {
-  width: 100%; /* Ensures responsiveness */
-  max-width: 300px; /* Adjust as needed */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Removes extra spacing */
-  margin: 0 auto; /* Centers the image */
-  border-radius: 10px; /* Optional: Adds smooth corners */
+  width: 100%; 
+  max-width: 300px; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto;
+  border-radius: 10px; 
 }

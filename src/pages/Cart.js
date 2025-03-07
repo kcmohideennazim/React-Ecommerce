@@ -1,18 +1,18 @@
 import React from "react";
 import { useCart } from "../context/CartContext";
-import { useNavigate } from "react-router-dom"; // Import navigation hook
-import "../pages/Cart.css"; // Import styles
+import { useNavigate } from "react-router-dom"; 
+import "../pages/Cart.css"; 
 
 function Cart() {
   const { cart, removeFromCart } = useCart();
-  const navigate = useNavigate(); // Initialize navigation
+  const navigate = useNavigate(); 
 
   const handleCheckout = () => {
     if (cart.length === 0) {
       alert("Your cart is empty!");
       return;
     }
-    navigate("/checkout"); // Redirect to Checkout page
+    navigate("/checkout"); 
   };
 
   return (
